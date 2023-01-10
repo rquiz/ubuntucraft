@@ -1,7 +1,9 @@
 # Dockerfile
-# Use to generate an Ubuntu container with full Minecraft Bedrock install
+# Use to generate an Ubuntu container with full Minecraft Bedrock install.
+# Intended for **ephemeral** MC Bedrock mod & plugin testing
 
-# Usage: docker build ubuntu_craft_server .
+# Build: docker build ubuntu_craft_server .
+# Run: docker run -it -p 0.0.0.0:19132:19132/udp ucraft_server
 
 FROM ubuntu:lunar-20221216
 
